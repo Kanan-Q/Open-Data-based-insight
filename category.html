@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol Xəbərləri - Xəbər Portalı</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/categoryStyle.css">
+</head>
+
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+       
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <!-- Breadcrumb -->
+        <nav class="mb-8">
+            <div class="flex items-center space-x-2 text-sm text-gray-500">
+                <a href="#" class="hover:text-blue-600 transition-colors">Ana səhifə</a>
+                <span>›</span>
+                <a href="#" class="hover:text-blue-600 transition-colors">İdman</a>
+                <span>›</span>
+                <span class="text-gray-700 font-medium">Futbol</span>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <div class="mb-8">
+            <div class="flex items-center mb-4">
+                <div
+                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-blue-600 rounded-xl flex items-center justify-center mr-4">
+                    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-900">Futbol Xəbərləri</h1>
+                    <p class="text-gray-600 mt-2">Azərbaycan və dünya futbolundan ən son xəbərlər</p>
+                </div>
+            </div>
+
+            <!-- Category Stats -->
+            <div class="flex items-center space-x-6 text-sm text-gray-500">
+                <span>📊 Bu gün: 12 xəbər</span>
+                <span>👥 Oxuyucu: 15.2K</span>
+                <span>🕒 Son yeniləmə: 30 dəqiqə əvvəl</span>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Main Content -->
+            <main class="lg:w-2/3">
+                <!-- Featured News -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Əsas Xəbər</h2>
+                    <article
+                        class="news-card bg-white rounded-xl shadow-sm overflow-hidden border border-gray-100 cursor-pointer">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <div class="thumbnail h-64 md:h-full flex items-center justify-center">
+                                    <div class="text-center text-white">
+                                        <svg class="w-16 h-16 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                                            <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                        </svg>
+                                        <p class="font-medium">Futbol Şəkli</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="md:w-1/2 p-6">
+                                <div class="flex items-center mb-3">
+                                    <span class="bg-red-100 text-red-800 text-sm font-medium px-3 py-1 rounded-full">SON
+                                        DƏQİQƏ</span>
+                                    <span class="text-gray-500 text-sm ml-3">1 saat əvvəl</span>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 leading-tight">
+                                    Qarabağ FK Avropa Liqasında növbəti mərhələyə yüksəldi
+                                </h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Azərbaycan çempionu Qarabağ FK, Avropa Liqasının qrup mərhələsində əldə etdiyi
+                                    parlaq nəticə ilə növbəti mərhələyə vəsiqə qazandı. Komanda bu mövsüm Avropa
+                                    arenasında uğurlu performans nümayiş etdirir.
+                                </p>
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-sm font-medium">
+                                            İS
+                                        </div>
+                                        <span class="ml-2 text-sm text-gray-700 font-medium">İdman Şöbəsi</span>
+                                    </div>
+                                    <span class="text-blue-600 hover:text-blue-800 font-medium text-sm">Ətraflı oxu
+                                        →</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- News Grid -->
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Bütün Futbol Xəbərləri</h2>
+                    <div class="grid gap-6 md:grid-cols-2">
+                        <article
+                            class="news-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 cursor-pointer">
+                            <div class="thumbnail h-48 flex items-center justify-center">
+                                <div class="text-center text-white">
+                                    <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                    </svg>
+                                    <p class="text-sm">Futbol</p>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-center mb-2">
+                                    <span
+                                        class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">FUTBOL</span>
+                                    <span class="text-gray-500 text-sm ml-2">2 saat əvvəl</span>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+                                    Neftçi FK yeni futbolçu transfer etdi
+                                </h3>
+                                <p id="newsHeader" class="text-gray-600 text-sm mb-3 leading-relaxed">
+                                    Azərbaycan Premyer Liqasının güclü komandalarından biri olan Neftçi FK, yeni mövsümə
+                                    hazırlıq çərçivəsində braziliyalı hücumçunu heyətinə qatdı.
+                                </p>
+                                <span class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ətraflı oxu →</span>
+                            </div>
+                        </article>
+
+                        <article
+                            class="news-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 cursor-pointer">
+                            <div class="thumbnail h-48 flex items-center justify-center">
+                                <div class="text-center text-white">
+                                    <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                    </svg>
+                                    <p class="text-sm">Futbol</p>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded">MİLLİ
+                                        KOMANDA</span>
+                                    <span class="text-gray-500 text-sm ml-2">3 saat əvvəl</span>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+                                    Azərbaycan millisi UEFA Nations League-də
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3 leading-relaxed">
+                                    Milli komandamız UEFA Nations League çərçivəsində növbəti oyununa hazırlaşır. Baş
+                                    məşqçi yeni taktiki sxemi sınaqdan keçirəcək.
+                                </p>
+                                <span class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ətraflı oxu →</span>
+                            </div>
+                        </article>
+
+                        <article
+                            class="news-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 cursor-pointer">
+                            <div class="thumbnail h-48 flex items-center justify-center">
+                                <div class="text-center text-white">
+                                    <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                    </svg>
+                                    <p class="text-sm">Futbol</p>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-center mb-2">
+                                    <span
+                                        class="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded">DÜNYA
+                                        FUTBOLU</span>
+                                    <span class="text-gray-500 text-sm ml-2">4 saat əvvəl</span>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+                                    Dünya Kuboku 2026 hazırlıqları başladı
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3 leading-relaxed">
+                                    FIFA 2026 Dünya Kuboku üçün hazırlıq işlərinə start verdi. Turnir ABŞ, Kanada və
+                                    Meksikada keçiriləcək.
+                                </p>
+                                <span class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ətraflı oxu →</span>
+                            </div>
+                        </article>
+
+                        <article
+                            class="news-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 cursor-pointer">
+                            <div class="thumbnail h-48 flex items-center justify-center">
+                                <div class="text-center text-white">
+                                    <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                    </svg>
+                                    <p class="text-sm">Futbol</p>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-center mb-2">
+                                    <span
+                                        class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2 py-1 rounded">TRANSFER</span>
+                                    <span class="text-gray-500 text-sm ml-2">5 saat əvvəl</span>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+                                    Sumqayıt FK yeni mövsümə hazırlaşır
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3 leading-relaxed">
+                                    Sumqayıt FK komandası yeni mövsümə hazırlıq çərçivəsində bir neçə yeni futbolçu ilə
+                                    müqavilə imzaladı.
+                                </p>
+                                <span class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ətraflı oxu →</span>
+                            </div>
+                        </article>
+
+                        <article
+                            class="news-card bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100 cursor-pointer">
+                            <div class="thumbnail h-48 flex items-center justify-center">
+                                <div class="text-center text-white">
+                                    <svg class="w-12 h-12 mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+                                    </svg>
+                                    <p class="text-sm">Futbol</p>
+                                </div>
+                            </div>
+                            <div class="p-5">
+                                <div class="flex items-center mb-2">
+                                    <span class="bg-red-100 text-red-800 text-xs font-medium px-2 py-1 rounded">AVROPA
+                                        LİQASI</span>
+                                    <span class="text-gray-500 text-sm ml-2">6 saat əvvəl</span>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-2 leading-tight">
+                                    Zirə FK Avropa kubokları üçün hazırlaşır
+                                </h3>
+                                <p class="text-gray-600 text-sm mb-3 leading-relaxed">
+                                    Zirə FK komandası Avropa kubokları üçün intensiv hazırlıq mərhələsindədir. Komanda
+                                    yeni strategiya üzərində işləyir.
+                                </p>
+                                <span class="text-blue-600 hover:text-blue-800 text-sm font-medium">Ətraflı oxu →</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Load More Button -->
+                <div class="text-center">
+                    <button
+                        class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition-colors">
+                        Daha çox futbol xəbəri yüklə
+                    </button>
+                </div>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="lg:w-1/3">
+                <!-- Latest News -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 mb-8">
+                    <h2 class="text-xl font-bold text-gray-900 mb-6">Ən Son Xəbərlər</h2>
+                    <div class="space-y-4">
+                        <article class="sidebar-item p-3 rounded-lg transition-colors cursor-pointer">
+                            <div class="flex items-center mb-2">
+                                <span
+                                    class="bg-orange-100 text-orange-800 text-xs font-medium px-2 py-1 rounded">İDMAN</span>
+                                <span class="text-gray-500 text-xs ml-2">15 dəq əvvəl</span>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 leading-tight">Basketbol liqasında yeni
+                                mövsüm başlayır</h3>
+                        </article>
+
+                        <article class="sidebar-item p-3 rounded-lg transition-colors cursor-pointer">
+                            <div class="flex items-center mb-2">
+                                <span
+                                    class="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded">FUTBOL</span>
+                                <span class="text-gray-500 text-xs ml-2">25 dəq əvvəl</span>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 leading-tight">Gənc futbolçu Avropa klubuna
+                                transfer oldu</h3>
+                        </article>
+
+                        <article class="sidebar-item p-3 rounded-lg transition-colors cursor-pointer">
+                            <div class="flex items-center mb-2">
+                                <span
+                                    class="bg-purple-100 text-purple-800 text-xs font-medium px-2 py-1 rounded">VOLEYBOL</span>
+                                <span class="text-gray-500 text-xs ml-2">40 dəq əvvəl</span>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 leading-tight">Qadın voleybol komandası
+                                çempion oldu</h3>
+                        </article>
+
+                        <article class="sidebar-item p-3 rounded-lg transition-colors cursor-pointer">
+                            <div class="flex items-center mb-2">
+                                <span
+                                    class="bg-blue-100 text-blue-800 text-xs font-medium px-2 py-1 rounded">TENNİS</span>
+                                <span class="text-gray-500 text-xs ml-2">1 saat əvvəl</span>
+                            </div>
+                            <h3 class="text-sm font-semibold text-gray-900 leading-tight">Beynəlxalq tennis turniri
+                                Bakıda keçiriləcək</h3>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Popular News -->
+                <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+                    <h2 class="text-xl font-bold text-gray-900 mb-6">Populyar Xəbərlər</h2>
+                    <div class="space-y-4">
+                        <article
+                            class="sidebar-item flex items-start space-x-3 p-3 rounded-lg transition-colors cursor-pointer">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                1</div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold text-gray-900 leading-tight mb-1">Qarabağ FK Avropa
+                                    Liqasında tarixi uğur</h3>
+                                <p class="text-xs text-gray-500">8.2K oxunma</p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="sidebar-item flex items-start space-x-3 p-3 rounded-lg transition-colors cursor-pointer">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                2</div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold text-gray-900 leading-tight mb-1">Milli komanda yeni
+                                    məşqçi ilə işə başladı</h3>
+                                <p class="text-xs text-gray-500">6.7K oxunma</p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="sidebar-item flex items-start space-x-3 p-3 rounded-lg transition-colors cursor-pointer">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                3</div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold text-gray-900 leading-tight mb-1">Premyer Liqada
+                                    transfer rekordları</h3>
+                                <p class="text-xs text-gray-500">5.4K oxunma</p>
+                            </div>
+                        </article>
+
+                        <article
+                            class="sidebar-item flex items-start space-x-3 p-3 rounded-lg transition-colors cursor-pointer">
+                            <div
+                                class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                4</div>
+                            <div class="flex-1">
+                                <h3 class="text-sm font-semibold text-gray-900 leading-tight mb-1">Yeni stadion
+                                    tikintisi başladı</h3>
+                                <p class="text-xs text-gray-500">4.1K oxunma</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Xəbər Portalı</h3>
+                    <p class="text-gray-300 mb-4 leading-relaxed">
+                        Azərbaycanın ən etibarlı xəbər mənbəyi. Siyasət, iqtisadiyyat, idman, mədəniyyət və digər
+                        sahələrdən ən son xəbərləri sizə çatdırırıq.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.017.001z.017.001" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Sürətli Keçidlər</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Ana səhifə</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Siyasət</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">İqtisadiyyat</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">İdman</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Mədəniyyət</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Əlaqə</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>📧 info@xeberportali.az</li>
+                        <li>📞 +994 12 123 45 67</li>
+                        <li>📍 Bakı, Azərbaycan</li>
+                        <li><a href="#" class="hover:text-white transition-colors">Reklam</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Karyera</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Xəbər Portalı. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/searchHeader.js" defer></script>
+
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'97e6bbb6b3c375c3',t:'MTc1Nzc1Njk1Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>

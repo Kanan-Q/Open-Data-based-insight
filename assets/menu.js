@@ -1,6 +1,6 @@
 const aside = document.querySelector('#sidebar')
 
-aside.innerHTML += `
+aside.innerHTML = `
  <div class="p-6">
                 <h2 class="text-lg font-semibold text-gray-800 mb-4">Kateqoriyalar</h2>
                 <nav class="space-y-2">
