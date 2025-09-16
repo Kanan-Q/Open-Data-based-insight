@@ -1,21 +1,33 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+ body {
+     font-family: 'Inter', sans-serif;
+ }
 
-        .news-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-        }
+ .news-card:hover {
+     transform: translateY(-4px);
+     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+ }
 
-        .news-card {
-            transition: all 0.3s ease;
-        }
+ .news-card {
+     transition: all 0.3s ease;
+ }
 
-        .sidebar-item:hover {
-            background-color: #f8fafc;
-        }
+ .sidebar-item:hover {
+     background-color: #f8fafc;
+ }
 
+ .ads {
+     width: 12%;
+     background-color: white;
+     height: 600px;
+     position: fixed;
+     top: 10%;
+     left: 1%;
+ }
 
-    
+ .ads img {
+    width: 80%;
+     padding: 20px 0px;
+     margin: 20px 10px;
+ }

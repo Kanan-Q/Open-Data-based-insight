@@ -1,19 +1,38 @@
  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        
-        .article-content p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-        
-        .share-btn:hover {
-            transform: translateY(-2px);
-        }
-        
-        .related-news-item:hover {
-            background-color: #f8fafc;
-        }
-        
-        .popular-news-item:hover {
-            background-color: #f1f5f9;
-        }
+
+ body {
+     font-family: 'Inter', sans-serif;
+ }
+
+ .article-content p {
+     margin-bottom: 1.5rem;
+     line-height: 1.8;
+ }
+
+ .share-btn:hover {
+     transform: translateY(-2px);
+ }
+
+ .related-news-item:hover {
+     background-color: #f8fafc;
+ }
+
+ .popular-news-item:hover {
+     background-color: #f1f5f9;
+ }
+
+
+ .ads {
+     width: 12%;
+     background-color: white;
+     height: 600px;
+     position: fixed;
+     top: 10%;
+     left: 1%;
+ }
+
+ .ads img {
+     width: 80%;
+     padding: 20px 0px;
+     margin: 20px 10px;
+ }
