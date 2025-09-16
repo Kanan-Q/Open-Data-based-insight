@@ -25,7 +25,7 @@
       transition: all 0.3s ease;
   }
   .ads {
-      width: 10%;
+      width: 6%;
       background-color: rgb(249, 250, 251);
       position: fixed;
       top: 10%;
@@ -37,3 +37,9 @@
       padding: 10px 0px;
       margin: 15px 0px;
   }
+
+   @media(max-width:768px) {
+     .ads {
+         display: none;
+     }
+ }
