@@ -35,7 +35,6 @@ document.querySelector('main button:last-of-type').addEventListener('click', fun
     alert('Əlavə xəbərlər yüklənir...');
 });
 
-// Mobile responsive sidebar toggle (for smaller screens)
 if (window.innerWidth < 768) {
     const sidebar = document.querySelector('aside');
     sidebar.classList.add('hidden');
