@@ -17,17 +17,15 @@
      background-color: #f8fafc;
  }
 
- .ads {
-     width: 12%;
-     background-color: white;
-     height: 600px;
-     position: fixed;
-     top: 10%;
-     left: 1%;
- }
+  .ads {
+      width: 10%;
+      background-color: rgb(249, 250, 251);
+      position: fixed;
+      top: 10%;
+  }
 
- .ads img {
-    width: 80%;
-     padding: 20px 0px;
-     margin: 20px 10px;
- }
+  .ads img {
+      width: 100%;
+      padding: 10px 0px;
+      margin: 10px 10px;
+  }

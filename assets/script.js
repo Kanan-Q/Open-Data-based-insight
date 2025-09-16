@@ -181,3 +181,52 @@ const fetchCrimeData = async () => {
 
 // Funksiyanı işə salırıq
 fetchCrimeData();
+
+
+const messagesDiv = document.getElementById("messages");
+const input = document.getElementById("userInput");
+const sendBtn = document.getElementById("sendBtn");
+
+// Mesaj əlavə edən funksiya
+function addMessage(text, sender) {
+  const msg = document.createElement("div");
+  msg.classList.add("message", sender);
+  msg.innerText = text;
+  messagesDiv.appendChild(msg);
+  messagesDiv.scrollTop = messagesDiv.scrollHeight;
+}
+
+// Göndər düyməsi
+sendBtn.addEventListener("click", async () => {
+  const userText = input.value.trim();
+  if (!userText) return;
+
+  addMessage(userText, "user");
+  input.value = "";
+
+  // AI-dan cavab al
+  const reply = await getAIResponse(userText);
+  addMessage(reply, "bot");
+});
+
+// AI cavabı gətirən funksiya
+async function getAIResponse(userText) {
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_OPENAI_API_KEY" // buraya API açarını qoyursan
+      },
+      body: JSON.stringify({
+        model: "gpt-3.5-turbo",
+        messages: [{ role: "user", content: userText }]
+      })
+    });
+
+    const data = await response.json();
+    return data.choices[0].message.content;
+  } catch (error) {
+    return "Xəta baş verdi!";
+  }
+}

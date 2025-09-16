@@ -27,15 +27,13 @@
 
   .ads {
       width: 10%;
-      /* background-color: red; */
-      height: 500px;
+      background-color: rgb(249, 250, 251);
       position: fixed;
       top: 10%;
-      /* background-image: url('https://i.pinimg.com/736x/c3/b2/c7/c3b2c7da343e671c6acd483a4d046e15.jpg'); */
-      /* object-fit:cover; */
-  }
-  .ads img{
-    padding: 20px 0px;
-    margin: 20px 10px;
   }
 
+  .ads img {
+      width: 100%;
+      padding: 10px 0px;
+      margin: 10px 10px;
+  }
