@@ -1,0 +1,23 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .sidebar-item:hover .sub-categories {
+            max-height: 500px;
+            opacity: 1;
+        }
+        
+        .sub-categories {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        .news-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .news-card {
+            transition: all 0.3s ease;
+        }
