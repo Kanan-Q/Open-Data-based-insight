@@ -2,7 +2,7 @@ document.querySelector('input[type="text"]').addEventListener('keypress', functi
     if (e.key === 'Enter') {
         const searchTerm = this.value;
         if (searchTerm.trim()) {
-            alert('"${searchTerm}" üçün axtarış nəticələri yüklənir...');
+            console.log('"${searchTerm}" üçün axtarış nəticələri yüklənir...');
         }
     }
 });
@@ -13,7 +13,7 @@ document.querySelectorAll('.news-card button').forEach(button => {
         e.preventDefault();
         const article = this.closest('.news-card');
         const title = article.querySelector('h1, h3').textContent;
-        alert('"${title}" xəbərinin tam mətnini oxuyursunuz...');
+        console.log('"${title}" xəbərinin tam mətnini oxuyursunuz...');
     });
 });
 
@@ -21,18 +21,18 @@ document.querySelectorAll('.news-card button').forEach(button => {
 document.querySelectorAll('.sidebar-item > div').forEach(item => {
     item.addEventListener('click', function () {
         const category = this.querySelector('span').textContent;
-        alert('${ category } kateqoriyasının xəbərləri yüklənir...');
+        console.log('${ category } kateqoriyasının xəbərləri yüklənir...');
     });
 });
 
 // Subscribe button
 document.querySelector('header button').addEventListener('click', function () {
-    alert('Abunəlik formu açılır...');
+    console.log('Abunəlik formu açılır...');
 });
 
 // Load more button
 document.querySelector('main button:last-of-type').addEventListener('click', function () {
-    alert('Əlavə xəbərlər yüklənir...');
+    console.log('Əlavə xəbərlər yüklənir...');
 });
 
 if (window.innerWidth < 768) {

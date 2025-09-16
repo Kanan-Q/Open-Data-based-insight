@@ -35,10 +35,10 @@ aside.innerHTML = `
                             </svg>
                         </div>
                         <div class="sub-categories ml-4 mt-1">
+                        <a href="business.html"
+                            class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Maliyyə</a>
                             <a href="#"
                                 class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Biznes</a>
-                            <a href="#"
-                                class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Maliyyə</a>
                             <a href="#"
                                 class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Neft
                                 və qaz</a>
@@ -95,13 +95,13 @@ aside.innerHTML = `
                             </svg>
                         </div>
                         <div class="sub-categories ml-4 mt-1">
+                        <a href="category.html"
+                            class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Digər
+                            idman</a>
                             <a href="#"
                                 class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Futbol</a>
                             <a href="#"
                                 class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Olimpiya</a>
-                            <a href="#"
-                                class="block py-2 px-3 text-sm text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded">Digər
-                                idman</a>
                         </div>
                     </div>
 
