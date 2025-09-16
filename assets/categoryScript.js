@@ -87,12 +87,102 @@ const fetchdata = async () => {
         formattedDate = `${day}/${month}/${year} ${hours}:${minutes}`;
     }
 
-    // HTML-a yazdırmaq
     document.querySelector('#h1').innerText = typeof title === "string" ? title : title["@value"];
     document.querySelector('#span').innerText = formattedDate;
-    document.querySelector('#p').innerText = 'Mənbə:' + orgName;
 
-    console.log(data);
 };
 
 fetchdata();
+
+
+
+
+const fetchSeconddata = async () => {
+    try {
+        const response = await fetch('https://admin.opendata.az/az/dataset/number-of-computers-available-in-schools.jsonld');
+        const data = await response.json();
+
+        const dataset = data["@graph"].find(item => item["dct:title"]);
+
+        const titleAZObj = dataset["dct:title"].find(t => typeof t === "object" && t["@language"] === "az");
+        const titleAZ = titleAZObj ? titleAZObj["@value"] : "";
+
+        document.querySelector('#next1').innerText = titleAZ;
+
+
+    } catch (error) {
+        console.error("Xəta baş verdi:", error);
+    }
+}
+
+fetchSeconddata();
+const fetchThirddata = async () => {
+    try {
+        const response = await fetch('https://admin.opendata.az/az/dataset/ec693731-30f7-4c49-8fac-dc4f0f0d5b9d.jsonld');
+        const data = await response.json();
+
+        const dataset = data["@graph"].find(item => item["dct:title"]);
+
+        const titleAZObj = dataset["dct:title"].find(t => typeof t === "object" && t["@language"] === "az");
+        const titleAZ = titleAZObj ? titleAZObj["@value"] : "";
+
+        document.querySelector('#next2').innerText = titleAZ;
+
+        console.log("P teqi üçün dct:title (AZ):", titleAZ);
+
+    } catch (error) {
+        console.error("Xəta baş verdi:", error);
+    }
+
+}
+
+fetchThirddata();
+
+
+const fetchFourthdata = async () => {
+    try {
+        const response = await fetch('https://admin.opendata.az/az/dataset/e1965f38-6377-4cf6-96ef-4cca129c719d.jsonld');
+        const data = await response.json();
+
+        // "@graph" içindən dct:title olan obyekt
+        const dataset = data["@graph"].find(item => item["dct:title"]);
+
+        // AZ dilindəki @value-ni tapırıq
+        const titleAZObj = dataset["dct:title"].find(t => typeof t === "object" && t["@language"] === "az");
+        const titleAZ = titleAZObj ? titleAZObj["@value"] : "";
+
+        // p teqinə yazdırırıq
+        document.querySelector('#next3').innerText = titleAZ;
+
+
+    } catch (error) {
+        console.error("Xəta baş verdi:", error);
+    }
+
+}
+
+fetchFourthdata();
+
+
+const fetchCrimeData = async () => {
+    try {
+        const response = await fetch('https://admin.opendata.az/az/dataset/ef6558b0-8abe-4867-9e30-54da7ee6dafb.jsonld');
+        const data = await response.json();
+
+        // "@graph" içindən Dataset tipli obyekt
+        const dataset = data["@graph"].find(item => item["@type"] && item["@type"].includes("schema1:Dataset"));
+
+        // AZ dilindəki @value-ni tapırıq
+        const titleAZObj = dataset["schema1:name"].find(t => typeof t === "object" && t["@language"] === "az");
+        const titleAZ = titleAZObj ? titleAZObj["@value"] : "";
+
+        // p teqinə yazdırırıq
+        document.querySelector('#next6').innerText = titleAZ;
+
+    } catch (error) {
+        console.error("Xəta baş verdi:", error);
+    }
+}
+
+// Funksiyanı işə salırıq
+fetchCrimeData();
