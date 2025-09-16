@@ -22,10 +22,11 @@
       background-color: rgb(249, 250, 251);
       position: fixed;
       top: 10%;
+      left: 1%;
   }
 
   .ads img {
       width: 100%;
       padding: 10px 0px;
-      margin: 10px 10px;
+      margin: 15px 0px;
   }
